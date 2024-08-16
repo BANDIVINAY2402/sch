@@ -1,19 +1,18 @@
 server:
   port: ${PORT:8080}
 spring:
-  application:
-    name: tasks
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/schoolpro
-    username: postgres
-    password: 2402
+    url: jdbc:postgresql://dpg-cqvh8c5ds78s739jh2d0-a.oregon-postgres.render.com:5432/cc_n473
+    username: cc_n473_user
+    password: JVFilgzn3EwMXwllHgYCdczK4bzJd6iA
   jpa:
     hibernate:
       ddl-auto: update
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
   mail:
     host: smtp.gmail.com
     port: 587 
