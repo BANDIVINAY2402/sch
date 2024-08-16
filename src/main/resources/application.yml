@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: tasks
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/schoolpro
+    username: postgres
+    password: 2402
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    port: 587 
+    username: "bandivinay24@gmail.com"
+    password: "bicm nmls xdme mfzw"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true    
+upload-dir:
+   user-file: C:\\Users\\Bandi.Vinay\\raasilabs
