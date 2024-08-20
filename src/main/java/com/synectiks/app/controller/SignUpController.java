@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.synectiks.app.entity.SignUpDetails;
 import com.synectiks.app.service.SignupServiceInterface;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
+@CrossOrigin
 public class SignUpController {
 	
 	@Autowired
@@ -68,5 +72,10 @@ public class SignUpController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password.");
         }
     }
+    @GetMapping("hii")
+    public String getMethodName() {
+        return new String("hiii");
+    }
+    
 
 }
